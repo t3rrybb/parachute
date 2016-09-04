@@ -58,5 +58,9 @@ def main():
     companies = process('http://www.canadastop100.com/toronto/')
     save2jsonfile('top-employers-gta.json', companies)
 
+    # Canada's Best Diversity Employers
+    companies = process('http://canadastop100.com/diversity/')
+    save2jsonfile('canadas-best-diversity-employers.json', companies)
+
 if __name__ == '__main__':
     main()
